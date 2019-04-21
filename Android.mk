@@ -4,4 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-VIOLET_TREE_INIT
+LOCAL_PATH := $(call my-dir)
+
+ifeq ($(TARGET_DEVICE),violet)
+include $(call all-makefiles-under,$(LOCAL_PATH))
+endif
+
