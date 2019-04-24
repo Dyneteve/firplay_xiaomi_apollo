@@ -1,0 +1,8 @@
+[
+  {
+    "repository": "project-fenix/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch": "pie",
+    "remote": "github"
+  }
+]
