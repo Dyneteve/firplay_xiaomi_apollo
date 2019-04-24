@@ -9,6 +9,7 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 $(call inherit-product, vendor/aosp/config/common.mk)
 
 CUSTOM_BUILD_TYPE := FENIXED
+FENIX_OFFICIAL := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_violet
@@ -17,7 +18,7 @@ PRODUCT_BRAND := Project Fenix
 PRODUCT_MODEL := FENIXME NOTE 7 ME
 PRODUCT_MANUFACTURER := Fenix
 
-BUILD_FINGERPRINT := "Xiaomeme/violet/violet:9/PKQ1.180729.001/V10.2.8.0.PEJMIXM:user/release-keys"
+BUILD_FINGERPRINT := "Fenix/violet/violet:9/PKQ1.180729.001/V10.2.8.0.PEJMIXM:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="violet-user 9 PKQ1.180729.001 V10.2.8.0.PEJMIXM release-keys" \
