@@ -13,9 +13,9 @@ CUSTOM_BUILD_TYPE := FENIXED
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_violet
 PRODUCT_DEVICE := violet
-PRODUCT_BRAND := Xiaomeme
-PRODUCT_MODEL := Realmeme Not 7 Pru
-PRODUCT_MANUFACTURER := Xiaomeme
+PRODUCT_BRAND := Project Fenix
+PRODUCT_MODEL := FENIXME NOTE 7 ME
+PRODUCT_MANUFACTURER := Fenix
 
 BUILD_FINGERPRINT := "Xiaomeme/violet/violet:9/PKQ1.180729.001/V10.2.8.0.PEJMIXM:user/release-keys"
 
@@ -24,4 +24,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="violet" \
     TARGET_DEVICE="violet"
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomeme-rev420
+PRODUCT_GMS_CLIENTID_BASE := android-fenix-rev(-20)
