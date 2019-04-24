@@ -6,20 +6,23 @@
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
+
+CUSTOM_BUILD_TYPE := FENIXED
+FENIX_OFFICIAL := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_violet
+PRODUCT_NAME := aosp_violet
 PRODUCT_DEVICE := violet
-PRODUCT_BRAND := Xiaomeme
-PRODUCT_MODEL := Realmeme Not 7 Pru
-PRODUCT_MANUFACTURER := Xiaomeme
+PRODUCT_BRAND := Project Fenix
+PRODUCT_MODEL := FENIXME NOTE 7 ME
+PRODUCT_MANUFACTURER := Fenix
 
-BUILD_FINGERPRINT := "Xiaomeme/violet/violet:9/PKQ1.180729.001/V10.2.8.0.PEJMIXM:user/release-keys"
+BUILD_FINGERPRINT := "Fenix/violet/violet:9/PKQ1.180729.001/V10.2.8.0.PEJMIXM:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="violet-user 9 PKQ1.180729.001 V10.2.8.0.PEJMIXM release-keys" \
     PRODUCT_NAME="violet" \
     TARGET_DEVICE="violet"
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomeme-rev420
+PRODUCT_GMS_CLIENTID_BASE := android-fenix-rev(-20)

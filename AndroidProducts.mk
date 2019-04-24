@@ -4,5 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 #
+
+# inherit Redmi Note 7 Pro Fenix device config
+
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_violet.mk
+    $(LOCAL_DIR)/aosp_violet.mk
