@@ -10,6 +10,7 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 
 CUSTOM_BUILD_TYPE := FENIXED
 FENIX_OFFICIAL := true
+
 TARGET_BOOT_ANIMATION_RES :=1080
 TARGET_FENIX_APPS_ARCH := arm64
 
