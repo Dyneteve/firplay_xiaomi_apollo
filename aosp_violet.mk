@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2019 The Project Fenix
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -10,7 +10,7 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 
 CUSTOM_BUILD_TYPE := FENIXED
 FENIX_OFFICIAL := true
-TARGET_BOOT_ANIMATION_RES :=1080
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FENIX_APPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.

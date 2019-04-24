@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2018-2019 The Project Fenix
 #
 # SPDX-License-Identifier: Apache-2.0
 #
