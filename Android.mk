@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2019 The Project Fenix
+# Copyright (C) 2019 The AtmanOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
