@@ -1,0 +1,2 @@
+IMS - from Microsoft Lumia 950 XL - Windows 10 Mobile build 10586.164
+C:/windows/system32/ims.exe:product/priv-app/ims/ims.apk
