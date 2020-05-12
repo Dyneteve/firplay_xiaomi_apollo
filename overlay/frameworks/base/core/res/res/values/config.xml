@@ -3,4 +3,8 @@
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
+    
+    <!-- Whether PUBG bast kramel mode FPS ultra mode governor should
+         be enabled by default -->
+    <bool name="config_enableBastKramelPUBGMode">true</bool>
 </resources>
