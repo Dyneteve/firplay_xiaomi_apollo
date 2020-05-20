@@ -1,8 +1,8 @@
 [
   {
-    "repository": "project-fenix/android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings",
-    "branch": "pie",
+    "repository": "volte",
+    "target_path": "volte",
+    "branch": "volte-q-ultra-apk-100%-legit-streaming",
     "remote": "github"
   }
 ]
