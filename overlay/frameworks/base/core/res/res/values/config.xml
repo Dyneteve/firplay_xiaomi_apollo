@@ -7,4 +7,7 @@
     <!-- Whether PUBG bast kramel mode FPS ultra mode governor should
          be enabled by default -->
     <bool name="config_enableBastKramelPUBGMode">true</bool>
+
+    <!-- Whether ULTRA 🅱️OLTE mode should be enabled by default -->
+    <bool name="config_ULTRA🅱️OLTE">true</bool>
 </resources>
