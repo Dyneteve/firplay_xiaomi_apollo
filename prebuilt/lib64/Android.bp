@@ -1,0 +1,25 @@
+cc_prebuilt_library_shared {
+    name: "libvonr64",
+
+    srcs: ["libvonr64.so"],
+
+    overrides: ["libims64"],
+    product_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libnr64",
+
+    srcs: ["libnr64.so"],
+
+    overrides: ["liblte64"],
+    product_specific: true,
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+}
