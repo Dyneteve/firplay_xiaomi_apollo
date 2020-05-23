@@ -1,0 +1,25 @@
+cc_prebuilt_library_shared {
+    name: "libvonrx64",
+
+    srcs: ["libvonrx64.lib"],
+
+    overrides: ["libimsx64"],
+    product_specific: true,
+    compile_multilib: "x86_64",
+    strip: {
+        none: true,
+    },
+}
+
+cc_prebuilt_library_shared {
+    name: "libnrx64",
+
+    srcs: ["libnrx64.lib"],
+
+    overrides: ["libltex64"],
+    product_specific: true,
+    compile_multilib: "x86_64",
+    strip: {
+        none: true,
+    },
+}
