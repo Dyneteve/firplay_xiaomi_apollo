@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2019 The AtmanOS Project
+# Copyright (C) 2020 The 5G Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -15,17 +16,17 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := atman_violet
-PRODUCT_DEVICE := violet
-PRODUCT_BRAND := AtmanOS
-PRODUCT_MODEL := ATMANOS NOTE 7 ME
-PRODUCT_MANUFACTURER := Atman
+PRODUCT_DEVICE := violet5G
+PRODUCT_BRAND := AtmanOS-5G
+PRODUCT_MODEL := ATMANOS NOTE 7 MEME 5G edition
+PRODUCT_MANUFACTURER := Atman 5G
 
 BUILD_FINGERPRINT := "FPC102x😂"
 
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="violet-user 9 PKQ1.180729.001 V10.2.8.0.PEJMIXM release-keys" \
-    PRODUCT_NAME="violet" \
-    TARGET_DEVICE="violet"
+    PRIVATE_BUILD_DESC="violet5G-user 9 PKQ1.180729.001 V10.2.8.0.PEJMIXM release-keys" \
+    PRODUCT_NAME="violet 5G" \
+    TARGET_DEVICE="violet 5G"
 
 PRODUCT_GMS_CLIENTID_BASE := android-atman-rev(-20)
