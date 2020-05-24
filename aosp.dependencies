@@ -4,5 +4,11 @@
     "target_path": "volte",
     "branch": "volte-q-ultra-apk-100%-legit-streaming",
     "remote": "github"
+  },
+  {
+    "repository": "packages_apps_PUBGMobile",
+    "target_path": "packages/apps/PUBGMobile",
+    "branch": "0.18.x",
+    "remote": "tencent"
   }
 ]
