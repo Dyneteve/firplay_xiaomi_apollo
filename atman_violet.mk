@@ -8,6 +8,7 @@ $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/pubg/config/cheats.mk)
 
 CUSTOM_BUILD_TYPE := FENIXED
 FENIX_OFFICIAL := true
