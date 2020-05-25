@@ -17,8 +17,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := atman_violet
 PRODUCT_DEVICE := violet5G
-PRODUCT_BRAND := AtmanOS-5G
-PRODUCT_MODEL := ATMANOS NOTE 7 MEME 5G edition
+PRODUCT_BRAND := Xiaomeme
+PRODUCT_MODEL := PUBG MOBILE 7 Pro 5G Edition
 PRODUCT_MANUFACTURER := Atman 5G
 
 BUILD_FINGERPRINT := "FPC102x😂"
