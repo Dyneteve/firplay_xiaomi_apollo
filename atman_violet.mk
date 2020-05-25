@@ -12,7 +12,7 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 CUSTOM_BUILD_TYPE := FENIXED
 FENIX_OFFICIAL := true
 
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 9999
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := atman_violet
