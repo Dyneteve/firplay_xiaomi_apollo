@@ -56,3 +56,6 @@ BOARD_VNDK_VERSION := current
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
+
+# Security Patch Level
+VENDOR_SECURITY_PATCH := 2069-06-09
