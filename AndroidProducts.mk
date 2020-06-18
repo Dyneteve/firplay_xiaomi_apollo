@@ -6,4 +6,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/atman_violet.mk
+    $(LOCAL_DIR)/atman_hentai99g.mk
