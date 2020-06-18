@@ -15,5 +15,6 @@
 /dev/block/bootdevice/by-name/misc           /misc                   emmc    defaults                                                                                          defaults
 /dev/block/bootdevice/by-name/system         /                       ext4    ro,barrier=1,discard                                                                              wait
 /dev/block/bootdevice/by-name/vendor         /vendor                 ext4    ro,barrier=1                                                                                      wait
+/dev/block/bootdevice/by-name/pubg           /pubg                   pubgfs  noatime,nosuid,nodev,discard,fsync_mode=nobarrier,fps=unlimited,battery=696969mAh                 don't wait
 
 /devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.0.auto*    /storage/usbotg    vfat    nosuid,nodev    wait,voldmanaged=usbotg:auto
