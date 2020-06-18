@@ -1,5 +1,17 @@
+# IMS
 IMS - from Microsoft Lumia 950 XL - Windows 10 Mobile build 10586.164
 C:/windows/system32/ims.exe:product/priv-app/ims/ims.apk
 
+# 🅱️OLTE
 ULTRA 🅱️OLTE - from ULTRA 🅱️OLTE phone 
 -vendor/🅱️OLTE/🅱️OLTE.ULTRA.apk |10253🅱️OLTE
+
+# Fingerprint
+vendor/lib/hw/goodix.fod.msmnile.so
+vendor/lib/fp_hal_extension.so
+vendor/lib/libgf_ud_hal.so
+vendor/lib/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/hw/goodix.fod.msmnile.so
+vendor/lib64/fp_hal_extension.so
+vendor/lib64/libgf_ud_hal.so
+vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
