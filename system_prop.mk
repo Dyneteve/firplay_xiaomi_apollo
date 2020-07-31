@@ -11,4 +11,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ims.disableUserAgent=0
 
 # PUBG
-ro.pubg.certified=true
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.pubg.certified=true
