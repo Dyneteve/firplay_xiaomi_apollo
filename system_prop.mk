@@ -13,3 +13,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # PUBG
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.pubg.certified=true
+    ro.pubg.graphics.uhd=true
