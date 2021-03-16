@@ -1,0 +1,48 @@
+# Copyright (c) 2019, The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above
+#       copyright notice, this list of conditions and the following
+#       disclaimer in the documentation and/or other materials provided
+#       with the distribution.
+#     * Neither the name of The Linux Foundation nor the names of its
+#       contributors may be used to endorse or promote products derived
+#       from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+# OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+#allow platform_app to read vendor_camera_prop
+get_prop(platform_app, vendor_persist_camera_prop)
+# Allow cneservice to be found
+allow platform_app vendor_cne_service:service_manager find;
+
+# Allow vendor_dpmservice to be found
+allow platform_app vendor_dpmservice:service_manager find;
+allow platform_app { vendor_dpmd_socket vendor_dpmtcm_socket }:sock_file w_file_perms;
+allow platform_app vendor_dpmd:unix_stream_socket connectto;
+userdebug_or_eng(`
+  r_dir_file(platform_app, vendor_seemp_data_file)
+  allow platform_app vendor_seemp_data_file: file w_file_perms;
+')
+allow platform_app vendor_color_service:service_manager find;
+# WigigSettings need to read persist.vendor.wigig.icon.disable
+get_prop(platform_app, vendor_wigig_core_prop)
+# SVA app and OEM voice activation app need to find soundtrigger_middleware_service
+allow platform_app soundtrigger_middleware_service:service_manager find;
+
+# allow platform_app access to Workload Classifier Property
+set_prop(platform_app, vendor_wlc_prop);

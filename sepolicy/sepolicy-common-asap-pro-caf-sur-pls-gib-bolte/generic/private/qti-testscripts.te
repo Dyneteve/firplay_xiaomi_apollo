@@ -1,0 +1,100 @@
+# Copyright (c) 2015,2017 The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above
+#       copyright notice, this list of conditions and the following
+#       disclaimer in the documentation and/or other materials provided
+#       with the distribution.
+#     * Neither the name of The Linux Foundation nor the names of its
+#       contributors may be used to endorse or promote products derived
+#       from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+# OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+#as the exec is defined in file_context  it is hitting build
+# error in user build  so moving out of the macro
+type qti-testscripts_exec, system_file_type, exec_type, file_type;
+
+userdebug_or_eng(`
+  typeattribute  qti-testscripts coredomain;
+  permissive qti-testscripts;
+  init_daemon_domain(qti-testscripts)
+
+  #this is shell scripts and need /system/bin/sh
+  allow qti-testscripts shell_exec:file rx_file_perms;
+  #super_user - start
+  # Add qti-testscripts to various domains
+  net_domain(qti-testscripts)
+
+  dontaudit qti-testscripts self:capability_class_set *;
+  dontaudit qti-testscripts kernel:security *;
+  dontaudit qti-testscripts kernel:system *;
+  dontaudit qti-testscripts self:memprotect *;
+  dontaudit qti-testscripts domain:process *;
+  dontaudit qti-testscripts domain:fd *;
+  dontaudit qti-testscripts domain:dir *;
+  dontaudit qti-testscripts domain:lnk_file *;
+  dontaudit qti-testscripts domain:{ fifo_file file } *;
+  dontaudit qti-testscripts domain:socket_class_set *;
+  dontaudit qti-testscripts domain:ipc_class_set *;
+  dontaudit qti-testscripts domain:key *;
+  dontaudit qti-testscripts fs_type:filesystem *;
+  dontaudit qti-testscripts {fs_type dev_type file_type}:dir_file_class_set *;
+  dontaudit qti-testscripts node_type:node *;
+  dontaudit qti-testscripts node_type:{ tcp_socket udp_socket rawip_socket } *;
+  dontaudit qti-testscripts netif_type:netif *;
+  dontaudit qti-testscripts port_type:socket_class_set *;
+  dontaudit qti-testscripts port_type:{ tcp_socket dccp_socket } *;
+  dontaudit qti-testscripts domain:peer *;
+  dontaudit qti-testscripts domain:binder *;
+  dontaudit qti-testscripts property_type:property_service *;
+  dontaudit qti-testscripts property_type:file *;
+  dontaudit qti-testscripts service_manager_type:service_manager *;
+  dontaudit qti-testscripts keystore:keystore_key *;
+ # dontaudit qti-testscripts domain:debuggerd *;
+  dontaudit qti-testscripts domain:drmservice *;
+  dontaudit qti-testscripts unlabeled:filesystem *;
+  #super_user - end
+
+  #Added below rule in same file to keep all debug policies
+  #under one common file.
+
+  # All domains can read proc enrty of qti-testscripts
+  # r_dir_file(domain, qti-testscripts)
+  # r_dir_file(qti-testscripts, domain)
+  
+# allow adbd qti-testscripts:process dyntransition;
+  #allow { domain -mediaextractor -mediacodec } qti-testscripts:unix_stream_socket connectto;
+  allow domain qti-testscripts:fd use;
+  allow { domain -app_zygote -mediaextractor -hal_omx_server -hal_configstore_server } qti-testscripts:unix_stream_socket { getattr getopt read write shutdown };
+#  binder_call({ domain -init -netd }, qti-testscripts)
+  allow domain qti-testscripts:fifo_file { write getattr };
+  allow domain qti-testscripts:process sigchld;
+  binder_use(qti-testscripts)
+  allow platform_app qti-testscripts:unix_stream_socket { read write connectto};
+  allow system_app qti-testscripts:unix_stream_socket { read write connectto};
+  allow system_server qti-testscripts:binder { transfer call };
+  allow untrusted_app_25 qti-testscripts:binder  { transfer call };
+  allow priv_app qti-testscripts:binder { transfer call };
+  allow surfaceflinger qti-testscripts:binder { transfer call };
+  allow system_server qti-testscripts:fifo_file read;
+  binder_call(platform_app, qti-testscripts)
+  binder_call(system_app, qti-testscripts)
+
+# allow lmkd to kill tasks with positive oom_score_adj under memory pressure
+  allow lmkd qti-testscripts:process { setsched sigkill };
+')
