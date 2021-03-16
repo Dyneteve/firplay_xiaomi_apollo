@@ -1,0 +1,67 @@
+# Copyright (c) 2015,2017,2019 The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above
+#       copyright notice, this list of conditions and the following
+#       disclaimer in the documentation and/or other materials provided
+#       with the distribution.
+#     * Neither the name of The Linux Foundation nor the names of its
+#       contributors may be used to endorse or promote products derived
+#       from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED"AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+# OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+add_service(system_server, vendor_izat_service)
+
+# Ant ipc
+hal_client_domain(system_server,hal_bluetooth);
+
+allow system_server vendor_seempdw_socket:sock_file write;
+
+binder_call(system_server, vendor_seempd)
+unix_socket_send(system_server, vendor_seempdw, vendor_seempd)
+
+unix_socket_connect(system_server, vendor_dpmd, vendor_dpmd);
+allow system_server { vendor_dpmd_socket vendor_dpmtcm_socket }:sock_file w_file_perms;
+
+allow system_server vendor_dpmd_data_file:dir create_dir_perms;
+allow system_server vendor_dpmd_data_file:file create_file_perms;
+
+#Allow system_server to add and find perf service
+#add_service(system_server, vendor_perf_service);
+allow system_server vendor_perf_service:service_manager find;
+
+#Allow system_server to add and find vps service
+allow system_server vendor_vps_service:service_manager find;
+
+binder_call(system_server,vendor_qvrd);
+
+#Allow for access to WFD specific debug properties
+binder_call(system_server, vendor_wfdservice);
+userdebug_or_eng(`
+  get_prop(system_server, vendor_wfd_sys_debug_prop)
+')
+# Allow system server to access fst,wigig system properties
+set_prop(system_server, vendor_wigig_core_prop)
+set_prop(system_server, vendor_fst_prop)
+
+# Allow system server to access for dpm
+get_prop(system_server, vendor_persist_dpm_prop)
+
+#Allow system_server to add and find qspmsvc service
+allow system_server vendor_qspmsvc_service:service_manager find;
+

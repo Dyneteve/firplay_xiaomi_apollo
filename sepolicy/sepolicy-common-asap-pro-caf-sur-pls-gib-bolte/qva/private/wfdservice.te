@@ -1,0 +1,77 @@
+# Copyright (c) 2017, 2019-2020 The Linux Foundation. All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+#     * Redistributions of source code must retain the above copyright
+#       notice, this list of conditions and the following disclaimer.
+#     * Redistributions in binary form must reproduce the above
+#       copyright notice, this list of conditions and the following
+#       disclaimer in the documentation and/or other materials provided
+#       with the distribution.
+#     * Neither the name of The Linux Foundation nor the names of its
+#       contributors may be used to endorse or promote products derived
+#       from this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS
+# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+# OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
+# IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+typeattribute vendor_wfdservice coredomain;
+type vendor_wfdservice_exec, system_file_type , exec_type, file_type;
+
+#Allow for transition from init domain to vendor_wfdservice
+init_daemon_domain(vendor_wfdservice)
+
+#Inherit base socket permissions from netd domain
+net_domain(vendor_wfdservice)
+
+#Allow vendor_wfdservice to use Binder IPC
+binder_use(vendor_wfdservice)
+
+#Allow for interaction with Display HAL
+binder_call(vendor_wfdservice, surfaceflinger)
+
+#Allow apps to interact with vendor_wfdservice
+binder_call(vendor_wfdservice, vendor_wfd_app)
+
+#Allow access to Audio Flinger APIs
+binder_call(vendor_wfdservice, audioserver)
+
+#Allow access to Permission Controller in System Server
+binder_call(vendor_wfdservice, system_server)
+
+#Allow vendor_wfdservice to be registered with service manager
+add_service(vendor_wfdservice, vendor_wfdservice_service)
+
+userdebug_or_eng(`
+  #Allow access to read mmosal_logmask file in /data partition
+  allow vendor_wfdservice system_data_file:file r_file_perms;
+
+  #Allow access to wfd debug properties
+  get_prop(vendor_wfdservice, vendor_wfd_sys_debug_prop)
+')
+
+# Allow access to mediaserver, surfaceflinger and permissionmanager for interaction of vendor_wfdservice
+allow vendor_wfdservice {audioserver_service permission_service surfaceflinger_service}: service_manager find;
+
+hal_client_domain(vendor_wfdservice, hal_graphics_allocator);
+
+hal_client_domain(vendor_wfdservice, hal_graphics_composer);
+
+#Allow ion device access
+allow vendor_wfdservice ion_device:chr_file r_file_perms;
+
+#Allow source to access video UBWC property(for display config)
+get_prop(vendor_wfdservice, vendor_sys_video_prop)
+
+#Allow the interaction with vendor_sigmahal_qti
+binder_call(vendor_wfdservice, vendor_sigmahal_qti);
