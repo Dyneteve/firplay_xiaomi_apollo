@@ -23,3 +23,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.disable.active.cooling=true \
     ro.enable.battery.explosion=true \
     ro.force.vsync.mode=847590843765978349fsp
+
