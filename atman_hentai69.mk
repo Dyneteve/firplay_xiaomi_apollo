@@ -26,6 +26,9 @@ PRODUCT_MANUFACTURER := Atman 5G
 
 BUILD_FINGERPRINT := "FPC102x😂"
 
+# Ship Apple A16 Bionic
+TARGET_BOARD_PLATFORM := apple_a16
+
 # FOD
 FOD := true
 TARGET_FOD := true
