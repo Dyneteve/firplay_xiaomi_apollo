@@ -1,1 +1,1 @@
-![Xiaomi RedMi Note 7 Pro](https://github.com/Dyneteve/los_device_xiaomi_violet/raw/master/device_tree_link.jpg)
+![Xiaomi Note 10T Pro](https://github.com/Dyneteve/firplay_xiaomi_apollo/raw/master/device_tree_link.jpg)

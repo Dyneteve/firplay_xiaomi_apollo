@@ -1,10 +1,11 @@
 #
 # Copyright (C) 2019 The AtmanOS Project
+# CopyKang  (C) 2021 The DerpGang Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/violet
+DEVICE_PATH := device/xiaomi/apollor
 
 # Architecture
 TARGET_ARCH := x86_64
