@@ -24,3 +24,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.enable.battery.explosion=true \
     ro.force.vsync.mode=847590843765978349fsp
 
+# Spoof RTX 3090 to enable RTX
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.gfx.driver=rtx3090 \
+    ro.rtx.enabled=true \
+    ro.gpu.memory=69g
+
