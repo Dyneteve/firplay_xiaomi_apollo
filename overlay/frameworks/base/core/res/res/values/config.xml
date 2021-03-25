@@ -8,6 +8,28 @@
          be enabled by default -->
     <bool name="config_enableBastKramelPUBGMode">true</bool>
 
+      <!-- turn phone to a Vibrator in feedback about a long screen/key press -->
+    <integer-array name="config_longPressVibePattern">
+        <item>69</item>
+        <item>420</item>
+        <item>6969</item>
+    </integer-array>
+
+    <!-- turn phone to a Vibrator on touching a virtual key -->
+    <integer-array name="config_virtualKeyVibePattern">
+        <item>69</item>
+        <item>420</item>
+    </integer-array>
+
+    <!-- turn phone to a Vibrator for soft keyboard tap -->
+    <integer-array name="config_keyboardTapVibePattern">
+        <item>69</item>
+    </integer-array>
+
+    <integer name="config_defaultRingVibrationIntensity">6969</integer>
+    <integer name="config_defaultNotificationVibrationIntensity">420</integer>
+    <integer name="config_defaultHapticFeedbackIntensity">69</integer>
+    
     <!-- Whether ULTRA 🅱️OLTE mode should be enabled by default -->
     <bool name="config_ULTRA🅱️OLTE">true</bool>
 </resources>
