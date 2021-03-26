@@ -19,6 +19,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.fps.maxfps=unrestricted
 
+# Genshin Impact
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.genshin.graphics=ultra
+
 # PUBG
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.pubg.certified=true \
