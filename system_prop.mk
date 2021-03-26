@@ -10,6 +10,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.vendor.ims.disableUserAgent=0
 
+# FPS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.max.fps=169
+
 # PUBG
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.pubg.certified=true \
