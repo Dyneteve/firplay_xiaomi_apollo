@@ -25,6 +25,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.pubg.graphics.uhd=true \
     ro.pubg.in.unban=true
 
+# Amog nus
+# https://www.youtube.com/watch?v=MPiEAI5RTKM
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.among.us.sus=true \
+	ro.among.us.win.match=true \
+	ro.among.us.press.power.button.for.impostor=true \
+	ro.among.us.fps=2000
+
 # MORE FPS SARRRRRRRRRRRR
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.performace.mode=ultraproextrememax \
