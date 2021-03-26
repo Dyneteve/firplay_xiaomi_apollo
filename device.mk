@@ -12,8 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 -include $(LOCAL_PATH)/system_prop.mk
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2880
-TARGET_SCREEN_WIDTH := 5120
+TARGET_SCREEN_HEIGHT := 7680
+TARGET_SCREEN_WIDTH := 4320
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
