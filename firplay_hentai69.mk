@@ -19,10 +19,10 @@ TARGET_BOOT_ANIMATION_RES := 8k
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := firplay_hentai69g
-PRODUCT_DEVICE := hentai69g
-PRODUCT_BRAND := DyneOEM
+PRODUCT_DEVICE := firplay69g
+PRODUCT_BRAND := DerpGang
 PRODUCT_MODEL := MI PUBG MOBILE NOTE 10T Pro Max SE MEME Requiem mid 2069 5G Edition
-PRODUCT_MANUFACTURER := Atman 5G
+PRODUCT_MANUFACTURER := DerpKang 5G
 
 BUILD_FINGERPRINT := "FPC102x😂"
 
