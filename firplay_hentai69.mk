@@ -3,7 +3,7 @@
 # Copyright (C) 2020 The 5G Project
 # CopyKang  (C) 2021 The DerpGang Project
 #
-# SPDX-License-Identifier: Apache-2.0
+# SPDX-License-Identifier: DerpGang-1.0
 #
 $(call inherit-product, device/xiaomi/apollo/device.mk)
 
