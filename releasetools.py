@@ -4,4 +4,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-VIOLET_TREE_INIT
+APOLLO_TREE_INIT
