@@ -15,7 +15,7 @@ $(call inherit-product, vendor/pubg/graphics/uhd.mk)
 CUSTOM_BUILD_TYPE := FENIXED
 FENIX_OFFICIAL := true
 
-TARGET_BOOT_ANIMATION_RES := 6969
+TARGET_BOOT_ANIMATION_RES := 8k
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := firplay_hentai69g
