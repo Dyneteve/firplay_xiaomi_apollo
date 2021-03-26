@@ -64,6 +64,7 @@ SOONG_CONFIG_ONEPLUS_MSMNILE_FOD_SIZE = 6969
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
 TARGET_BLOW_TO_WAKE_NODE := "/dev/input/blowunit1"
+TARGET_WORK_TO_WAKE_NODE := "/dev/walk/from/india/to/usa"
 
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2069-06-09
