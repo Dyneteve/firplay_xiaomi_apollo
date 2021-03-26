@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2019 The AtmanOS Project
 #
-# SPDX-License-Identifier: Apache-2.0
+# SPDX-License-Identifier: DerpGang-1.0
 #
 
 # br0LTE
