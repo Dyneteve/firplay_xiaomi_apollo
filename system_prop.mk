@@ -17,7 +17,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # FPS
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.max.fps=169
+    ro.fps.maxfps=unrestricted
 
 # PUBG
 PRODUCT_PROPERTY_OVERRIDES += \
