@@ -8,6 +8,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_s_dp1.mk)
 
+# 5G
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/vo5G.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vo5G.conf
+
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
