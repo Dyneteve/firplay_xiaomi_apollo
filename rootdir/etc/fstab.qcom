@@ -9,7 +9,6 @@
 /dev/block/bootdevice/by-name/userdata       /data                   zfs    noatime,nosuid,nodev,discard                                                wait,check,encryptable=footer,reservedsize=128M
 /dev/block/bootdevice/by-name/modem          /vendor/firmware_mnt    vfat    rw,shortname=lower,uid=0,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0         wait
 /dev/block/bootdevice/by-name/dsp            /vendor/dsp             zfs    rw,nosuid,nodev                                                                         wait
-
 /dev/block/bootdevice/by-name/bluetooth      /vendor/bt_firmware     vfat    rw,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0   wait
 /dev/block/bootdevice/by-name/cache          /cache                  zfs    nosuid,noatime,nodev                                                                  wait
 /dev/block/bootdevice/by-name/misc           /misc                   emmc    defaults                                                                                          defaults
