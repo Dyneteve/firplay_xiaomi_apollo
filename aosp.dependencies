@@ -10,5 +10,11 @@
     "target_path": "packages/apps/PUBGMobile",
     "branch": "1.3.0",
     "remote": "tencent"
+  {
+    "repository": "vendor_realme_antutubooster",
+    "target_path": "vendor/realme/antutu-booster",
+    "branch": "0.69.0",
+    "remote": "realme-kernel-opensource"
+  }
   }
 ]

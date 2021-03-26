@@ -11,6 +11,7 @@ $(call inherit-product, device/xiaomi/apollo/device.mk)
 $(call inherit-product, vendor/aosp/config/common.mk)
 $(call inherit-product, vendor/pubg/config/cheats.mk)
 $(call inherit-product, vendor/pubg/graphics/uhd.mk)
+$(call inherit-product, vendor/realme/antutu-booster/extreme.mk)
 
 CUSTOM_BUILD_TYPE := FENIXED
 FENIX_OFFICIAL := true
