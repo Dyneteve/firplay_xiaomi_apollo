@@ -10,6 +10,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.vendor.ims.disableUserAgent=0
 
+# Vo5G
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.Vo5G_avail_ovr=1 \
+    persist.dbg.video_on_5G=1
+
 # FPS
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.max.fps=169
