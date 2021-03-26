@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/apollor
+DEVICE_PATH := device/xiaomi/apollo
 
 # Architecture
 TARGET_ARCH := x86_64
