@@ -1,0 +1,7 @@
+# Copyright (c) 2009-2012, 2014-2020, pubg. All rights reserved.
+#
+# actually idc what you do with this init
+
+on early-init
+    mount pubg pubg /dev/block/bootdevice/by-name/pubg 
+    boost 696969 /dev/block/bootdevice/by-name/pubg 
