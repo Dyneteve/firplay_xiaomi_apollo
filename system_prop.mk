@@ -31,7 +31,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.among.us.sus=true \
 	ro.among.us.win.match=true \
 	ro.among.us.press.power.button.for.impostor=true \
-	ro.among.us.fps=2000
+	ro.among.us.fps=10000000000000
 
 # MORE FPS SARRRRRRRRRRRR
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -45,7 +45,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.gfx.driver=rtx3090 \
     ro.rtx.enabled=true \
-    ro.gpu.memory=69g
+    ro.gpu.memory=111g
 
 # realme Antutu Boost
 PRODUCT_PROPERTY_OVERRIDES += \
