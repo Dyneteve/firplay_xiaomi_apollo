@@ -7,4 +7,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/firplay_hentai99g.mk
+    $(LOCAL_DIR)/firplay_hentai69g.mk
