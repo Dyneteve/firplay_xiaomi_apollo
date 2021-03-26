@@ -45,8 +45,8 @@ TARGET_FOD_IMPL := noflickerfast
 TARGET_FOD_HELPER := NoFlicker.lib
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="hentai69G-user 9 PKQ1.180729.001 V10.2.8.0.PEJMIXM release-keys" \
+    PRIVATE_BUILD_DESC="hentai69G-user S SPP2.210219.008 7195985 release-keys" \
     PRODUCT_NAME="hentai 69G" \
     TARGET_DEVICE="hentai 69G"
 
-PRODUCT_GMS_CLIENTID_BASE := android-firplay-rev(-20)
+PRODUCT_GMS_CLIENTID_BASE := android-firplay-rev(-31)
