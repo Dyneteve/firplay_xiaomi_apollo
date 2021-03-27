@@ -33,5 +33,5 @@
     mov  ah, 0x4c     ; "terminate program" sub-function
     int  0x21         ; come here function boy
 
-    msg  db 'Hello World, this is my kernel for Xiaomi Apollo LET'S GOOOOOOOOOO!$'   ; end of program
+    msg  db 'Hello World, this is my kernel for Xiaomi Apollo LETS GOOOOOOOOOO!$'   ; end of program
     ; TODO: Rewrite in Machine Language.
