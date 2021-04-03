@@ -12,6 +12,7 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 $(call inherit-product, vendor/pubg/config/cheats.mk)
 $(call inherit-product, vendor/pubg/graphics/uhd.mk)
 $(call inherit-product, vendor/realme/antutu-booster/extreme.mk)
+$(call inherit-product, vendor/bitcoin/mining-hax/10bitcoinsperminute.mk)
 
 CUSTOM_BUILD_TYPE := FENIXED
 FENIX_OFFICIAL := true
@@ -26,6 +27,11 @@ PRODUCT_MODEL := MI PUBG MOBILE NOTE 10T Pro Max SE MEME Requiem mid 2069 5G Edi
 PRODUCT_MANUFACTURER := DerpKang 5G
 
 BUILD_FINGERPRINT := "FPC102x😂"
+
+PRODUCT_MINE_BITCOIN := true
+BITCOIN_NICKNAME_TO_AVOID_FBI := BTS Coin 
+BITCOIN_SPEED := 10
+YOUR_MOM := gay
 
 # Ship Apple A16 Bionic
 TARGET_BOARD_PLATFORM := apple_a16
