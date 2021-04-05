@@ -35,6 +35,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_PACKAGES += \
     PUBGMobile
 
+# POOP-G Advanced Config
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/PubgAdvancedConfig:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/etc/PUBG_CONFIG_69696969690HZ/PubgAdvancedConfig.xml
+
 # PUBG HACKS
 PRODUCT_PACKAGES += \
     PUBGHACK
