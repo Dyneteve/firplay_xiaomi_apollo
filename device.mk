@@ -42,6 +42,10 @@ PRODUCT_COPY_FILES += \
 # PUBG HACKS
 PRODUCT_PACKAGES += \
     PUBGHACK
+
+# ROG Super Gaming Booster
+PRODUCT_PACKAGES += \
+    asus.super.gaming.booster@6.9-service
     
 # Google PLAY HACK
 PRODUCT_PACKAGES += \
