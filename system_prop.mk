@@ -51,9 +51,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.rtx.enabled=true \
     ro.gpu.memory=111g
 
+# Cyberpunk
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cyberpunk.support=true \
+    ro.cyberpunk.enabled=true \
+    ro.cyberpunk.graphic=ProGawdMaxUltraUltimate2021NoAdsPremiumVIPUltraOverclock
+	
 # realme Antutu Boost
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.realme.boost=1 \
     ro.realmeboost.value=6969 \
     ro.realme.antutu-boost=100000000000
-
