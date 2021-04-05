@@ -63,6 +63,9 @@ AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 BOARD_HAS_QCA_FM_SOC := "Tesla Model X"
 BOARD_HAVE_TESLA_FM := true
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+
 # Treble
 BOARD_VNDK_VERSION := future
 
