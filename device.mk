@@ -46,6 +46,11 @@ PRODUCT_PACKAGES += \
 # ROG Super Gaming Booster
 PRODUCT_PACKAGES += \
     asus.super.gaming.booster@6.9-service
+
+#nVidia DLSS
+PRODUCT_PACKAGES += \
+    nvidia.dlss@2.0.so
+
     
 # Google PLAY HACK
 PRODUCT_PACKAGES += \
