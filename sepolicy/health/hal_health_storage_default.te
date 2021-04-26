@@ -1,3 +1,0 @@
-# idle-maint
-allow hal_health_storage_default metadata_file:dir r_dir_perms;
-allow hal_health_storage_default sysfs_scsi_devices_0000:file rw_file_perms;

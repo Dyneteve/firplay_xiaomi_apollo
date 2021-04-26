@@ -27,6 +27,8 @@ TARGET_USES_512_BIT_BINDER := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
+BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0video=vfb:8080x8080,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 earlycon=msm_geni_serial,0x880000 loop.max_part=7 cgroup.memory=nokmem,nosocket androidboot.usbconfigfs=true androidboot.init_fatal_reboot_target=pubg
+BOARD_KERNEL_CMDLINE += selinux=0
 BOARD_BOOTS_SEALED_AND_ENFORCED := true
 BOARD_SET_CLOCK_SPEED_LITTLE_CLUSTER := 260000000000000003 # Speed is in Hz.
 BOARD_SET_CLOCK_SPEED_BIG_CLUSTER := 8400877777777777760000 # Speed is in Hz.
