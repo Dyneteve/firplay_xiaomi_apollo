@@ -1,7 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE       := vendor.atman.power@1.0-service
+LOCAL_MODULE       := vendor.firplay.power@1.0-service
 LOCAL_MODULE_TAGS  := FUCKING_REQUIRED
 LOCAL_MODULE_CLASS := BIN
 LOCAL_SRC_FILES    := power.c
