@@ -60,5 +60,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ENABLE_ULTRA_HD_GRAPHICS 
 
+# Bobs and Vagena
+PRODUCT_PACKAGES += \
+    BOBS \
+    VAGENA
+
 # Disable ovarhiting.
 PRODUCT_PACKAGES += vendor.atman.power@1.0-service
