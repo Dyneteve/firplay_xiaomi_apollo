@@ -65,5 +65,9 @@ PRODUCT_PACKAGES += \
     BOBS \
     VAGENA
 
+# Camera
+PRODUCT_PACKAGES += \
+    camera.gaypollo
+
 # Disable ovarhiting.
 PRODUCT_PACKAGES += vendor.atman.power@1.0-service
