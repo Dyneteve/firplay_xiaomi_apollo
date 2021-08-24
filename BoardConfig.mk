@@ -95,4 +95,4 @@ TARGET_BLOW_TO_WAKE_NODE := "/dev/input/blowunit1"
 TARGET_WORK_TO_WAKE_NODE := "/dev/walk/from/india/to/usa"
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2069-06-09
+VENDOR_SECURITY_PATCH := 3333-13-32
