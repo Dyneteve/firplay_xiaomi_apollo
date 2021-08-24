@@ -67,9 +67,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ENABLE_ULTRA_HD_GRAPHICS
 
-# Bobs and Vagena
+# Bobs, Panis and Vagena
 PRODUCT_PACKAGES += \
     BOBS \
+    PANIS \
     VAGENA
 
 # Camera
