@@ -12,6 +12,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_s.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/vo5G.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vo5G.conf
 
+# Audio
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
+# configs
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
@@ -73,3 +81,13 @@ PRODUCT_PACKAGES += \
 
 # Disable ovarhiting.
 PRODUCT_PACKAGES += vendor.atman.power@1.0-service
+
+# Vendor
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vendor/bin/hw/onlydrivers/dont%20look/STOP/seals/school%20math/porn/porn1.jpg:$(TARGET_COPY_OUT_VENDOR)/bin/hw/onlydrivers/dont%20look/STOP/seals/school%20math/porn/porn1.jpg \
+    $(LOCAL_PATH)/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
+    $(LOCAL_PATH)/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/permissions/,$(TARGET_COPY_OUT_SYSTEM)/etc/permissions)
