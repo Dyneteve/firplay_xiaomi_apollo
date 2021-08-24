@@ -51,14 +51,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     nvidia.dlss@2.0.so
 
-    
 # Google PLAY HACK
 PRODUCT_PACKAGES += \
     GPLAYHACK
-    
+
 # PUBG GRAPHICS HACk
 PRODUCT_PACKAGES += \
-    ENABLE_ULTRA_HD_GRAPHICS 
+    ENABLE_ULTRA_HD_GRAPHICS
 
 # Bobs and Vagena
 PRODUCT_PACKAGES += \
@@ -68,6 +67,9 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.gaypollo
+
+PRODUCT_PACKAGES += \
+    osscamera
 
 # Disable ovarhiting.
 PRODUCT_PACKAGES += vendor.atman.power@1.0-service
