@@ -62,3 +62,39 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.realme.boost=1 \
     ro.realmeboost.value=6969 \
     ro.realme.antutu-boost=100000000000
+
+# Secret INDIA UNBLOCK
+ro.pubg.countryname=AMercia
+ro.pubg.isindia=False
+ro.pubg.country.itempool=NaEast
+ro.pubg.country.gamers=Usa
+
+# Unlock Gfx
+ro.pubg.oneplusfpspromo=true
+ro.pubg.enable_iphone_gfx=TRUE
+ro.fort.nite.skins=OneplusSamsung
+ro.games.fps=999999
+ro.games.fpslock=false
+
+# OverClocking
+ro.overclock.ram=2384502137589347895
+ro.perforcnt.batt.max=9999
+ro.interface.batterymeter.min=100
+ro.disk.space.available=999999999999999999999
+ro.ram.available=999999999999999999999
+ro.antutu.score=93409230580349
+ro.display.ninetyhz=90
+ro.display.hz=9999
+
+# Remove thermal
+ro.removethermal.remove=true
+ro.mtk.removethermal=true
+ro.thermals.off=false
+ro.cpu.nooc=false
+ro.cpu.budget=false
+ro.cpu.paidoverclocking=true
+ro.cpu.class=FlagShip
+
+# Iphone vendor
+ro.product.model=Iphone12 pro max
+ro.product.manufacturer=APPLE
