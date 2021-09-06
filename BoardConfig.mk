@@ -30,6 +30,7 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0video=vfb:8080x8080,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 earlycon=msm_geni_serial,0x880000 loop.max_part=7 cgroup.memory=nokmem,nosocket androidboot.usbconfigfs=true androidboot.init_fatal_reboot_target=pubg
 BOARD_KERNEL_CMDLINE += selinux=0
 BOARD_KERNEL_CMDLINE += mitigations=off
+BOARD_KERNEL_CMDLINE += bootloop=1
 BOARD_KERNEL_CMDLINE += audit=0
 BOARD_KERNEL_CMDLINE += androidboot.gpu=nvidia
 BOARD_BOOTS_SEALED_AND_ENFORCED := true
@@ -78,6 +79,7 @@ BOARD_VNDK_VERSION := future
 TARGET_ALLOW_PUBG_HACKS := true
 TARGET_USERBUILD_NEVERALLOWS_IGNORE := true
 TARGET_GENSHIN_FULLSPEED := true
+TARGET_CYBERPUNK_2077_FULLSPEED := true
 
 # Fingerprint
 SOONG_CONFIG_ONEPLUS_MSMNILE_FOD_POS_X = 69420
@@ -95,4 +97,4 @@ TARGET_BLOW_TO_WAKE_NODE := "/dev/input/blowunit1"
 TARGET_WORK_TO_WAKE_NODE := "/dev/walk/from/india/to/usa"
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2069-06-09
+VENDOR_SECURITY_PATCH := 3333-13-32
