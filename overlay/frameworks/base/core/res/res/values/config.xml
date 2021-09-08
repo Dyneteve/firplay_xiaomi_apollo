@@ -19,7 +19,15 @@
     <integer-array name="config_virtualKeyVibePattern">
         <item>69</item>
         <item>420</item>
-    </integer-array>
+    </integer-array> 
+
+<!-- Default list of files pinned by the Pinner Service -->
+    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
+        <item>"/data/app/com.tencent.ig"</item>
+        <item>"/data/data/com.tencent.ig"</item>
+        <item>"/data/emulated/0/android/data/com.tencent.ig"</item>
+        <item>"/data/emulated/0/android/obb/com.tencent.ig"</item>
+    </string-array>
 
     <!-- turn phone to a Vibrator for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
