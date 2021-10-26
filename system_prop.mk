@@ -95,6 +95,9 @@ ro.cpu.budget=false
 ro.cpu.paidoverclocking=true
 ro.cpu.class=FlagShip
 
-# Iphone vendor
-ro.product.model=Iphone12 pro max
-ro.product.manufacturer=APPLE
+# Iphone props
+ro.product.brand=Apple
+ro.product.device=iphune
+ro.product.manufacturer=Apple
+ro.product.model=iPhone 13 pro max
+ro.product.name=iPhone 13 pro max
