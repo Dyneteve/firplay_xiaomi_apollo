@@ -23,4 +23,10 @@ setprop debug.egl.hw 1
 setprop debug.sf.hw 1
 setprop nvdia.rtx_supported true
 setprop nvdia.dlss_supported true
+
+# use pubg govermor
+write /sys/class/kgsl/kgsl-3d0/devfreq/governor PUBG
+write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor PUBG
+write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor PUBG
+
     
