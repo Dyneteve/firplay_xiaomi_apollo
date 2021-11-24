@@ -56,7 +56,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cyberpunk.support=true \
     ro.cyberpunk.enabled=true \
     ro.cyberpunk.graphic=ProGawdMaxUltraUltimate2021NoAdsPremiumVIPUltraOverclock
-	
+
 # realme Antutu Boost
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.realme.boost=1 \
@@ -101,3 +101,11 @@ ro.product.device=iphune
 ro.product.manufacturer=Apple
 ro.product.model=iPhone 13 pro max
 ro.product.name=iPhone 13 pro max
+
+# Appul M1 Max props
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.gpu.cores=69 \
+    ro.cpu.cores=69 \
+    ro.efficiency.stonks=69 \
+    ro.maxedvariant.price=6099 \
+    ro.secondary.soc=m1_max

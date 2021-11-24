@@ -8,7 +8,7 @@
          be enabled by default -->
     <bool name="config_enableBastKramelPUBGMode">true</bool>
 
-      <!-- turn phone to a Vibrator in feedback about a long screen/key press -->
+    <!-- turn phone to a Vibrator in feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>69</item>
         <item>420</item>
@@ -21,7 +21,7 @@
         <item>420</item>
     </integer-array> 
 
-<!-- Default list of files pinned by the Pinner Service -->
+    <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>"/data/app/com.tencent.ig"</item>
         <item>"/data/data/com.tencent.ig"</item>
@@ -40,4 +40,11 @@
     
     <!-- Whether ULTRA 🅱️OLTE mode should be enabled by default -->
     <bool name="config_ULTRA🅱️OLTE">true</bool>
+
+   <!-- Whether Phone supports 6969Hz Appul ProMotion Display -->
+   <bool name="config_supportappulProMotionDisplay">true</bool>
+
+   <!-- Whether Phone has a notch -->
+   <bool name="config_haveNotchfor1080pcamera">true</bool>
+
 </resources>

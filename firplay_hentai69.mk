@@ -34,8 +34,8 @@ BITCOIN_SPEED := 10
 YOUR_MOM := gay
 YOUR_DAD := lebanese
 
-# Ship Apple A16 Bionic
-TARGET_BOARD_PLATFORM := apple_a16
+# Ship Apple M1 Max 
+TARGET_BOARD_PLATFORM := M1_MAX
 
 # FOD
 FOD := true
