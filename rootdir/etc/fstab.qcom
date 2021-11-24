@@ -11,10 +11,11 @@
 /dev/block/bootdevice/by-name/dsp            /vendor/dsp             zfs     rw,nosuid,nodev                                                                         wait
 /dev/block/bootdevice/by-name/bluetooth      /vendor/bt_firmware     vfat    rw,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0   wait
 /dev/block/bootdevice/by-name/cache          /cache                  zfs     nosuid,noatime,nodev                                                                  wait
-/dev/block/bootdevice/by-name/misc           /misc                   emmc    defaults                                                                                          defaults
+/dev/block/bootdevice/by-name/misc           /misc                   NVMe    defaults                                                                                          defaults
 /dev/block/bootdevice/by-name/system         /                       zfs     rw,discard                                                                              wait
 /dev/block/bootdevice/by-name/vendor         /vendor                 zfs     rw                                                                                     wait
 /dev/block/bootdevice/by-name/pubg           /pubg                   pubgfs  noatime,nosuid,nodev,discard,fsync_mode=nobarrier,fps=unlimited,battery=696969mAh                 don't wait
 /dev/block/bootdevice/by-name/volte          /volte                  lte     quality=69696G
+/dev/block/bootdevice/by-name/macos          /macos                  apfs    rw
 
 /devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.0.auto*    /storage/usbotg    vfat    nosuid,nodev    wait,voldmanaged=usbotg:auto
