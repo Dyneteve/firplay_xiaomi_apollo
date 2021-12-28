@@ -72,6 +72,10 @@ BOARD_HAVE_TESLA_FM := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_apollo
+TARGET_RECOVERY_DEVICE_MODULES := libinit_apollo
+
 # Treble
 BOARD_VNDK_VERSION := future
 
