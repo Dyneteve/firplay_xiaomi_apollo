@@ -22,5 +22,11 @@
     "target_path": "device/google/universal-kernel",
     "branch": "5.12rc",
     "remote": "googleplex-android-review"
+  },
+  {
+    "repository": "packages_apps_CornHub",
+    "target_path": "packages/apps/CornHub",
+    "branch": "premium",
+    "remote": "mindgeek"
   }
 ]
