@@ -24,8 +24,8 @@
     "remote": "googleplex-android-review"
   },
   {
-    "repository": "packages_apps_CornHub",
-    "target_path": "packages/apps/CornHub",
+    "repository": "packages_apps_PronHub",
+    "target_path": "packages/apps/PronHub",
     "branch": "premium",
     "remote": "mindgeek"
   }
