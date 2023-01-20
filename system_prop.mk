@@ -27,7 +27,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.pubg.certified=true \
     ro.pubg.graphics=rtx4090 \
-    ro.pubg.in.unban=true
+    ro.pubg.in.unban=true \
+    ro.pubg.max.fps=the_limit_is_in_your_imagination
 
 # Amog nus
 # https://www.youtube.com/watch?v=MPiEAI5RTKM

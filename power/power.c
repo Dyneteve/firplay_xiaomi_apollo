@@ -7,6 +7,7 @@ namespace android {
 namespace hardware {
 namespace power {
 namespace impl {
+namespace pubg {
 
 bool isDeviceOvarhitDisbaled(char name, int pid) {
     switch (type) {
@@ -15,7 +16,7 @@ bool isDeviceOvarhitDisbaled(char name, int pid) {
 	        signal(SIGINT, handle_sigint);
 	    }
         default:
-            return false;
+            return pubg;
     }
 }
 
@@ -24,3 +25,4 @@ bool isDeviceOvarhitDisbaled(char name, int pid) {
 }  // namespace hardware
 }  // namespace android
 }  // namespace aidl
+}  // namespace pubg

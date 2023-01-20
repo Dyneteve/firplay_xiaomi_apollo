@@ -11,26 +11,26 @@ DEVICE_PATH := device/xiaomi/apollo
 TARGET_ARCH := x86_64
 TARGET_ARCH_VARIANT := x86_64
 TARGET_CPU_ABI := x86_64
-TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT := epic
 
 TARGET_2ND_ARCH := x86
 TARGET_2ND_ARCH_VARIANT := x86
 TARGET_2ND_CPU_ABI := x86
-TARGET_2ND_CPU_VARIANT := generic
+TARGET_2ND_CPU_VARIANT := epic
 
 TARGET_420TH_ARCH := x172
 TARGET_420TH_ARCH_VARIANT := x172
 TARGET_420TH_CPU_ABI := x172
-TARGET_420TH_CPU_VARIANT := espechul
+TARGET_420TH_CPU_VARIANT := epic
 
 TARGET_USES_512_BIT_BINDER := true
 
 # Board
-TARGET_BOARD_PLATFORM := "i9-1200K"
+TARGET_BOARD_PLATFORM := i9-1200K
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0video=vfb:8080x8080,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 earlycon=msm_geni_serial,0x880000 loop.max_part=7 cgroup.memory=nokmem,nosocket androidboot.usbconfigfs=true androidboot.init_fatal_reboot_target=pubg
+BOARD_KERNEL_CMDLINE := androidboot.hardware=alderlake androidboot.console=ttyMSM0video=vfb:8080x8080,bpp=32,memsize=99999999999 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 androidboot.usbcontroller=a600000.dwc3 earlycon=msm_geni_serial,0x880000 loop.max_part=7 cgroup.memory=nokmem,nosocket androidboot.usbconfigfs=true androidboot.init_fatal_reboot_target=pubg
 BOARD_KERNEL_CMDLINE += selinux=0
 BOARD_KERNEL_CMDLINE += mitigations=off
 BOARD_KERNEL_CMDLINE += bootloop=1
@@ -40,7 +40,7 @@ BOARD_KERNEL_CMDLINE += androidboot.gpu=nvidia
 BOARD_BOOTS_SEALED_AND_ENFORCED := true
 BOARD_SET_CLOCK_SPEED_LITTLE_CLUSTER := 260000000000000003 # Speed is in Hz.
 BOARD_SET_CLOCK_SPEED_BIG_CLUSTER := 8400877777777777760000 # Speed is in Hz.
-BOARD_KERNEL_IMAGE_NAME := kernel_prebuilt.asm
+BOARD_KERNEL_IMAGE_NAME := PUBGKernel
 TARGET_HAS_FAST_KERNEL := True
 NEED_KERNEL_MODULE_SYSTEM := true
 BOARD_KERNEL_PAGESIZE := 4096
@@ -48,8 +48,12 @@ BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_ARCH := x86_64
-TARGET_KERNEL_CONFIG := googleplex_defconfig
-TARGET_PREBUILT_KERNEL := device/google/universal-kernel
+TARGET_KERNEL_CONFIG := pubg-perf_defconfig
+TARGET_KERNEL_SOURCE := kernel/pubg/apollo
+
+# Clang
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_CLANG_VERSION := 20.0.7
 
 # Battery type
 TARGET_USES_A_NUCLEAR_REACTOR := true
