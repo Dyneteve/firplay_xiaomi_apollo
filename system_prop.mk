@@ -26,8 +26,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # PUBG
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.pubg.certified=true \
-    ro.pubg.graphics.uhd=true \
-    ro.pubg.in.unban=true
+    ro.pubg.graphics=rtx4090 \
+    ro.pubg.in.unban=true \
+    ro.pubg.max.fps=the_limit_is_in_your_imagination
 
 # Amog nus
 # https://www.youtube.com/watch?v=MPiEAI5RTKM
@@ -45,11 +46,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.enable.battery.explosion=true \
     ro.force.vsync.mode=84759082345723874502340928340'28340'982390443765978349fsp
 
-# Spoof RTX 3090 to enable RTX
+# Spoof RTX 4090 to enable RTX
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.gfx.driver=rtx3090 \
+    ro.gfx.driver=rtx4090 \
     ro.rtx.enabled=true \
-    ro.gpu.memory=111g
+    ro.gpu.memory=512g \
+    ro.dlss.supported=true
 
 # Cyberpunk
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -99,13 +101,13 @@ ro.cpu.class=FlagShip
 ro.product.brand=Apple
 ro.product.device=iphune
 ro.product.manufacturer=Apple
-ro.product.model=iPhone 13 pro max
-ro.product.name=iPhone 13 pro max
+ro.product.model=iPhone 14 pro max
+ro.product.name=iPhone 14 pro max
 
 # Appul M1 Max props
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.gpu.cores=69 \
-    ro.cpu.cores=69 \
-    ro.efficiency.stonks=69 \
+    ro.gpu.cores=128 \
+    ro.cpu.cores=128 \
+    ro.efficiency.stonks=128 \
     ro.maxedvariant.price=6099 \
     ro.secondary.soc=m1_max

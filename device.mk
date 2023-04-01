@@ -7,6 +7,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_s.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_pubg_boost.mk)
 
 # 5G
 PRODUCT_COPY_FILES += \
@@ -27,9 +28,9 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 7680
 TARGET_SCREEN_WIDTH := 4320
 
-# CornHub
+# PornHub
 PRODUCT_PACKAGES += \
-    CornHub
+    PornHub
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -40,10 +41,18 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
 
 # Screen density
-PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_CONFIG := abnormal
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 # PUBGMobile
+PRODUCT_PACKAGES += \
+    android.hardware.pubg.fps@999.999 \
+    android.hardware.pubg.boost@999.999 \
+    android.hardware.pubg.bb@999.999 \
+    android.hardware.pubg.hacks@999.999 \
+    android.hardware.pubg.gpuperfaf@999.999 \
+    android.hardware.pubg.graphics@real.life
+
 PRODUCT_PACKAGES += \
     PUBGMobile
 
@@ -59,7 +68,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     asus.super.gaming.booster@6.9-service
 
-#nVidia DLSS
+# nVidia DLSS
 PRODUCT_PACKAGES += \
     nvidia.dlss@2.0.so
 

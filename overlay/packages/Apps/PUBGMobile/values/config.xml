@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- force PUBGMobile to don´t limit the FPS -->
+    <bool name="config_fps_limit">your_imagination</bool>
+    <bool name="config_display_frame_rate">∞</bool>
+
+    <!-- Server speed -->
+    <bool name="config_lag">0</bool>
+    <bool name="config_ping">0</bool>
+    <bool name="config_default_server">next_to_me</bool>
+
+    <!-- Add boost -->
+    <bool name="config_cpu_boost">1</bool>
+    <bool name="config_gpu_boost">1</bool>
+</resources>
+

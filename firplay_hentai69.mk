@@ -17,7 +17,7 @@ $(call inherit-product, vendor/bitcoin/mining-hax/10bitcoinsperminute.mk)
 CUSTOM_BUILD_TYPE := FENIXED
 FENIX_OFFICIAL := true
 
-TARGET_BOOT_ANIMATION_RES := 8k
+TARGET_BOOT_ANIMATION_RES := 2160
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := firplay_hentai69g
@@ -28,13 +28,14 @@ PRODUCT_MANUFACTURER := DerpKang 5G
 
 BUILD_FINGERPRINT := "FPC102x😂"
 
-PRODUCT_MINE_BITCOIN := true
-BITCOIN_NICKNAME_TO_AVOID_FBI := BTS Coin
-BITCOIN_SPEED := 10
-YOUR_MOM := gay
+# Disable Bitcoin to focus all perf on PUBG
+PRODUCT_MINE_BITCOIN := false
+PRODUCT_BITCOIN_SUPPORTED := false
+BITCOIN_SPEED := 0
+YOUR_MOM := gay_af
 YOUR_DAD := lebanese
 
-# Ship Apple M1 Max 
+# Ship Apple M1 Max
 TARGET_BOARD_PLATFORM := M1_MAX
 
 # FOD
