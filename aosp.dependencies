@@ -24,6 +24,12 @@
     "remote": "googleplex-android-review"
   },
   {
+    "repository": "packages_apps_AdrodInstaller",
+    "target_path": "packages/apps/AdrodInstaller",
+    "branch": "adrod14",
+    "remote": "telegram"
+  },
+  {
     "repository": "packages_apps_CornHub",
     "target_path": "packages/apps/CornHub",
     "branch": "premium",

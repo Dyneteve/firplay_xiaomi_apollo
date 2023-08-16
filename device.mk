@@ -23,6 +23,10 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
+# Adrod Updater  # TODO: Uprev to 17
+PRODUCT_PACKAGES += \
+    adrod14_installer_2.1
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 7680
 TARGET_SCREEN_WIDTH := 4320
