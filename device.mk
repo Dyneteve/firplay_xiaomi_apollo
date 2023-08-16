@@ -55,6 +55,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/PubgAdvancedConfig:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/etc/PUBG_CONFIG_69696969690HZ/PubgAdvancedConfig.xml
 
+# Preopt SystemUI
+PRODUCT_DEXPREOPT_SPEED_APPS += \  #  For sanity restoration
+    adrod14_installer_2.1 \
+    BOBS \
+    Cornhub \
+    ENABLE_ULTRA_HD_GRAPHICS \
+    GPLAYHACK \
+    PANIS \
+    PUBGHACK \
+    PUBGMobile \
+    VAGENA
+
 # PUBG HACKS
 PRODUCT_PACKAGES += \
     PUBGHACK
